@@ -1,0 +1,26 @@
+{
+  "name": "agmstudio-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for AGM Studio",
+  "main": "dist/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://adrigm@github.com/adrigm/agmstudio-frontend.git"
+  },
+  "author": "Adrián Guerra Marrero (https://agmstudio.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adrigm/agmstudio-frontend/issues"
+  },
+  "homepage": "https://github.com/adrigm/agmstudio-frontend#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.0",
+    "jquery": "^3.3.1"
+  }
+}
