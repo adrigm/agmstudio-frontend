@@ -1,29 +1,22 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- build:include layout/header.html --><!-- /build -->
 
-    <title>AGM Studio</title>
-    <meta name="description" content="AGM Studio - Desarrollo Web Profesional">
+<nav class="agm-navbar">
+    <div class="agm-navbar-container">
+        <div class="agm-logo"></div>
 
-    <link rel="shortcut icon" href="<%= assets %>/img/favicon.png">
+        <ul class="agm-navbar-menu">
+            <li class="active"><a href="#"><i class="zmdi zmdi-home"></i> Inicio</a></li>
+            <li><a href="#"><i class="zmdi zmdi-edit"></i> Blog</a></li>
+            <li><a href="#"><i class="zmdi zmdi-desktop-mac"></i> Portafolio</a></li>
+            <li><a href="#"><i class="zmdi zmdi-book"></i> Libros</a></li>
+            <li><a href="#"><i class="zmdi zmdi-account"></i> Sobre mí</a></li>
+            <li><a href="#"><i class="zmdi zmdi-email"></i> Contacto</a></li>
+        </ul>
+    </div>
+</nav>
 
-    <!-- build:css:dist <%=assets%>/css/style.min.css -->
-        <link rel="stylesheet" href="<%= assets %>/css/style.css">
-    <!-- /build -->
+<aside class="agm-sidebar">
 
-    <!--[if lt IE 9]>
-        <script src="<%= assets %>/js/html5shiv.min.js"></script>
-        <script src="<%= assets %>/js/respond.min.js"></script>
-    <![endif]-->
-</head>
-<body>
+</aside>
 
-    <p><%= assets %></p>
-    
-</body>
-</html>
-
+<!-- build:include layout/footer.html --><!-- /build -->

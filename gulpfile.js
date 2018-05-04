@@ -16,7 +16,7 @@ const jshint = require('gulp-jshint');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
 
-let config = require('config');
+let config = require('./config');
 
 let paths = {
     dist: path.join(config.folders.dist),

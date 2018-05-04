@@ -1,2 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,300,400i,600,700');
+
 @import 'base/config';
 @import 'base/main';
+
+.agm-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 70px;
+    background-color: $color-dark;
+    color: $color-light;
+    display: flex;
+    justify-content: center;
+    
+
+    .agm-navbar-container {
+        flex-wrap: wrap;
+        display: flex;
+        //flex-grow: 1;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 2rem 0rem;
+        flex: 1 1 auto;
+        
+
+        .agm-navbar-menu {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            flex: 1 1 auto;
+            padding: 0;
+            flex-direction: column;
+            margin: 0;
+            align-self: stretch;
+            
+            
+            li {
+                width: 100%;
+                a {
+                    color: $color-light;
+                    display: flex;
+                    flex-direction: column;
+                    height: 70px;
+                    align-items: center;
+                    text-decoration: none;
+                    display: flex;
+                    justify-content: center;
+                    min-height: 70px;
+                    font-size: 14px;
+                    
+    
+                    i {
+                        display: block;
+                        font-size: 2rem;
+                    }
+
+                    &:hover,
+                    &:focus {
+                        background-color: $color-dark-dark;
+                    }
+                }
+            }
+        }
+    }
+
+    
+}
+
+.agm-sidebar {
+    position: fixed;
+    top: 0;
+    left: 70px;
+    bottom: 0;
+    width: 340px;
+    background-color: $color-dark-dark;
+}
+
+.agm-logo {
+    height: 30px;
+    width: 30px;
+    background-color: $color-primary;
+    transform: rotate(45deg);
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 4rem;
+
+    &:after {
+        content: 'A';
+        display: block;
+        height: 30px;
+        width: 30px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 3.8rem;
+        font-weight: 800;
+        transform: rotate(-45deg);
+        position: absolute;
+        top: 3px;
+        left: 3px;
+    }
+}

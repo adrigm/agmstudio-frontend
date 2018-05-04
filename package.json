@@ -36,6 +36,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^4.0.1",
     "gulp-uglify": "^3.0.0",
+    "jshint": "^2.9.5",
     "path": "^0.12.7",
     "run-sequence": "^2.2.1"
   },

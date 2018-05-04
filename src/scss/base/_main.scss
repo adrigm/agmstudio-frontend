@@ -1,15 +1,66 @@
+// -----------------------------------------------------------------------------
+// Base
+// -----------------------------------------------------------------------------
+
+/////// ONLY FOR DEVELOPER ///////
+* {                             //
+    //animation: none !important; //
+}                               //
+/////// ONLY FOR DEVELOPER ///////
+
 html {
     font-size: 10px;
+    -webkit-font-smoothing: antialiased;
+    //-webkit-text-stroke-width: .5px;
 }
 
 body {
-    background-color: $color-primary;
-    font-size: 1.4rem;
+    color: $color-dark;
+    background-color: $color-light;
+    font-family: $font-default;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highcolor-light: rgba(0, 0, 0, 0);
 }
 
-.otro {
-    font-size: 1.2rem;
-    background-color: rgba(232, 23, 203, .5);
-    box-shadow: 1px 1px 1px rgba(232, 23, 203, .5);
-    opacity: .5;
+// -----------------------------------------------------------------------------
+// Reset Styles
+// -----------------------------------------------------------------------------
+
+input:-webkit-autofill {
+    //s-webkit-box-shadow: 0 0 0 1000px white inset;
+}
+
+:focus {
+    outline: none !important;
+}
+
+::-moz-focus-inner {
+    border: 0 !important;
+}
+
+/* Change autocomplete styles in WebKit */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    transition: background-color 50000s ease-in-out 0s !important;
+    border-bottom: solid 1px #d2d2d2 !important;
+}
+
+iframe {
+    border: 0;
+    display: table;
+}
+
+button {
+    cursor: pointer;
 }
