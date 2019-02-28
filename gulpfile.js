@@ -80,6 +80,21 @@ gulp.task('html', () => {
         .pipe(connect.reload());
 });
 
+gulp.task('html:dist', function() {
+    gulp.src(['src/html/**/*.html', '!src/html/layout/**/*'])
+        .pipe(processhtml({
+            recursive: true,
+            process: true,
+            strip: true,
+            environment: targets[config.environment].environment,
+            data: targets[config.environment].data,
+            customBlockTypes: []
+        }))
+        .pipe(gulpif(config.compress, prettify({indent_size: 2})))
+        .pipe(gulp.dest(path.join(paths.html)))
+        .pipe(connect.reload());
+});
+
 gulp.task('scss', () => {
     gulp.src('src/scss/**/*.scss')
     .pipe(sass().on('error', sass.logError))
@@ -102,7 +117,7 @@ gulp.task('js', () => {
         .pipe(jshint())
         .pipe(jshint.reporter('default'))
         .pipe(babel({
-            presets: ['env'],
+            presets: ['@babel/env'],
         }))
         .pipe(gulpif(config.compress, concat('app.min.js')))
         .pipe(gulpif(config.compress, uglify()))
@@ -151,6 +166,7 @@ gulp.task('dist', function() {
 
 gulp.task('watch', () => {
     gulp.watch(['src/html/**/*'], ['html']);
+    gulp.watch(['src/html/layout/**/*'], ['html:dist']);
     gulp.watch(['src/js/**/*'], ['js']);
     gulp.watch(['src/scss/**/*'], ['scss']);
     gulp.watch(['src/img/**/*'], ['img']);

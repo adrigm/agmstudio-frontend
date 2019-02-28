@@ -41,7 +41,7 @@ module.exports = {
             'node_modules/material-design-iconic-font/dist/css/material-design-iconic-font.min.css',
             'node_modules/bootstrap-select/dist/css/bootstrap-select.min.css',
             "node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker3.min.css",
-            "node_modules/ionicons/css/ionicons.min.css",
+            "node_modules/ionicons/dist/css/ionicons.min.css",
             'node_modules/plyr/dist/plyr.css',
             "node_modules/node-snackbar/dist/snackbar.min.css",
             //"node_modules/bootstrap-slider/dist/css/bootstrap-slider.min.css"
